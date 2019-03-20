@@ -1,0 +1,6 @@
+<div class="note" [style.background]="note.bgColor">
+    <i class="icon-color grow" [(colorPicker)]="note.bgColor" (colorPickerClose)="onColorChange($event)"></i>
+    <i class="icon-trash grow" (click)="deleteNote()"></i>
+    <textarea [(ngModel)]="note.note" (keyup)="detectKeyboard$.next($event.target.value)"></textarea>
+</div>
+

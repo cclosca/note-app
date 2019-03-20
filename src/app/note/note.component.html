@@ -1,0 +1,10 @@
+<div class="container pane">
+    <div class="pane-header">
+        <button mat-raised-button color="primary" (click)="createNote()">Add note</button>
+    </div>
+    <div class="pane-body">
+        <div class="note-wrapper" *ngFor="let note of notes">
+            <app-single-note [note]="note"></app-single-note>
+        </div>
+    </div>
+</div>

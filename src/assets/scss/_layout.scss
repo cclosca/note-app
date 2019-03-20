@@ -1,0 +1,35 @@
+@import 'vars';
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pane {
+    border-radius: 4px 4px 0 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 $boxShadow;
+
+    .pane-header {
+        display: flex;
+        flex: 1;
+        border-bottom: 1px solid $boxShadow;
+        margin-right: -30px;
+        margin-left: -30px;
+        padding: 5px 30px;
+
+        > * {
+            margin-right: 5px;
+        }
+    }
+
+    .pane-body {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

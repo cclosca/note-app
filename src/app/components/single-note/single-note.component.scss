@@ -1,0 +1,28 @@
+@import '../../../assets/scss/vars';
+
+.note {
+    border-radius: 2px;
+    padding: 15px 5px 5px;
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+
+        &.icon-trash {
+            right: 5px;
+        }
+        &.icon-color {
+            right: 25px;
+        }
+    }
+
+    textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 50px;
+        background: transparent;
+        border: 0;
+    }
+}

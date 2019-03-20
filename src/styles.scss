@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/scss/vars';
+@import './assets/scss/layout';
+@import './assets/scss/font-icon';
+@import './assets/scss/animations';
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    box-sizing: border-box;
+
+    &:focus {
+        outline: 0 !important;
+    }
+}
+
+body {
+    margin: 0;
+    padding-top: 100px;
+    background: $bgColor;
+    font-family: 'Open Sans', sans-serif;
+}
